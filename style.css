@@ -1,0 +1,98 @@
+#rc-popup-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 10000 !important;
+}
+
+#rc-popup {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  width: 700px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#rc-popup h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+  text-align: center;
+}
+
+#rc-popup h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+#rc-popup .rc-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#rc-popup .rc-left,
+#rc-popup .rc-right {
+  width: 45%;
+}
+
+#rc-popup .rc-left p,
+#rc-popup .rc-right p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+#rc-popup .rc-documents {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#rc-popup .rc-documents a {
+  display: inline-block;
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  padding: 8px 15px;
+  background: #f8f9fa;
+}
+
+#rc-popup .rc-documents a:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+#rc-close {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #888;
+}
+
+#rc-close:hover {
+  color: #333;
+}
+
+.rc-hidden {
+  display: none !important;
+}
